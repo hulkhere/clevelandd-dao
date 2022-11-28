@@ -43,7 +43,10 @@ const About = () => {
       </div>
       <div className="grid max-w-screen-lg grid-cols-1 justify-center gap-5 lg:my-28 lg:grid-cols-3">
         {about.map((item, key) => (
-          <button className="bg-[rgba(255,255,255, 0.8)] h-60 w-72 rounded border-2 border-gray-400 p-4 lg:h-full lg:w-full lg:p-10">
+          <button
+            key={key}
+            className="bg-[rgba(255,255,255, 0.8)] h-60 w-72 rounded border-2 border-gray-400 p-4 lg:h-full lg:w-full lg:p-10"
+          >
             <div className="text-center text-5xl lg:text-7xl">{item.image}</div>
             <div
               className={`${tt} mt-5 max-w-sm text-center text-3xl uppercase text-white lg:mt-10 lg:text-4xl`}
