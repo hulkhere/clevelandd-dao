@@ -18,13 +18,13 @@ const Founders = () => {
   ];
 
   return (
-    <div className="mt-10 flex w-full flex-col items-center lg:mt-36">
+    <div className="mt-4 flex w-full flex-col items-center lg:mt-12">
       <div className={`${tt} text-5xl text-white lg:text-7xl`}>FOUNDERS</div>
-      <div className="my-8 grid grid-cols-1 justify-center gap-5 lg:my-12 lg:grid-cols-3">
+      <div className="my-4 grid grid-cols-1 justify-center gap-5 lg:my-6 lg:grid-cols-3">
         {founders.map((item, key) => (
           <button
             key={key}
-            className="bg-[rgba(255,255,255, 0.8)] h-full w-full rounded border-2 border-gray-400 p-4 lg:p-10"
+            className="bg-[rgba(255,255,255, 0.8)] h-full w-full rounded border-2 border-gray-400 p-4 transition-all hover:border-white lg:p-10"
           >
             <img
               src={item.image}
