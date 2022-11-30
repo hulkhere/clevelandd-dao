@@ -89,12 +89,18 @@ const Hero = () => {
                 </button>
               </Link>
               <button className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f3cb02]">
-                <Image
-                  src="/assets/images/twitter.png"
-                  alt=""
-                  width={22}
-                  height={22}
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://twitter.com/cleveland_dao"
+                >
+                  <Image
+                    src="/assets/images/twitter.png"
+                    alt=""
+                    width={22}
+                    height={22}
+                  />
+                </a>
               </button>
             </div>
           </div>

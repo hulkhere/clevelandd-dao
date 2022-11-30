@@ -84,7 +84,7 @@ const About = () => {
   return (
     <div className="mt-10 flex w-full flex-col items-center lg:mt-36">
       <AboutHeader />
-      <div className="grid max-w-screen-lg grid-cols-1 justify-center gap-5 lg:my-28 lg:grid-cols-3">
+      <div className="grid max-w-screen-lg grid-cols-1 justify-center gap-5 lg:my-10 lg:grid-cols-3">
         {about.map((item, key) => (
           <button
             key={key}

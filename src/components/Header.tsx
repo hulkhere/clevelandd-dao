@@ -6,27 +6,34 @@ import Image from "next/image";
 const Header = () => {
   return (
     <div
-      className={`w-full h-20 lg:h-28 ${circa} p-6 pb-0 gap-x-8 lg:px-10 flex items-center justify-between`}
+      className={`h-20 w-full lg:h-28 ${circa} flex items-center justify-between gap-x-8 p-6 pb-0 lg:px-10`}
     >
       <div className={`pl-3 text-4xl ${tt}`}>CLE DAO</div>
-      <div className="flex gap-x-0 lg:gap-x-5 items-center">
-        <button className="rounded-full w-12 h-12 bg-[#f3cb02] flex items-center justify-center">
-          <Image
-            src="/assets/images/twitter.png"
-            alt=""
-            width={22}
-            height={22}
-          />
+      <div className="flex items-center gap-x-0 lg:gap-x-5">
+        <button className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f3cb02]">
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://twitter.com/cleveland_dao"
+          >
+            <Image
+              src="/assets/images/twitter.png"
+              alt=""
+              width={22}
+              height={22}
+            />
+          </a>
         </button>
         <Link
           href="https://www.meetup.com/cleveland-blockchain-cryptocurrency-meetup-group/"
           target="_blank"
+          rel="noreferrer noopener"
         >
           <button
-            className={`hidden px-4 font-bold lg:px-8 h-[3.2rem] bg-[#f3cb02] text-black rounded ${gilroy} lg:flex items-center justify-center group`}
+            className={`hidden h-[3.2rem] rounded bg-[#f3cb02] px-4 font-bold text-black lg:px-8 ${gilroy} group items-center justify-center lg:flex`}
           >
             MEETUPS
-            <ArrowUpRightIcon className="h-5 w-5 ml-2 group-hover:rotate-45 transition-all" />
+            <ArrowUpRightIcon className="ml-2 h-5 w-5 transition-all group-hover:rotate-45" />
           </button>
         </Link>
       </div>
