@@ -12,7 +12,10 @@ import { gilroy, circa, tt } from "../utils/fonts";
 const footer = [
   { image: PolygonFooter, link: "https://twitter.com/cleveland_dao" },
   { image: EthereumFooter, link: "https://twitter.com/cleveland_dao" },
-  { image: LocationFooter, link: "https://twitter.com/cleveland_dao" },
+  {
+    image: LocationFooter,
+    link: "https://www.google.com/maps/place/Liberty+Commons,+Rockside+Rd,+Independence,+OH+44131,+USA/@41.3940603,-81.6465313,17z/data=!3m1!4b1!4m5!3m4!1s0x8830e4345b9c55bd:0x1159bdec380ba5e3!8m2!3d41.3940603!4d-81.6443426",
+  },
   { image: Twitter, link: "https://twitter.com/cleveland_dao" },
 ];
 
