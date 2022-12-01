@@ -23,12 +23,12 @@ const AnimatedCharacters = (props) => {
     hidden: {
       y: "200%",
       color: "#ffffFF",
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 },
+      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.65 },
     },
     visible: {
       y: 0,
       color: "#FFffff",
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 },
+      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.65 },
     },
   };
 

@@ -6,28 +6,6 @@ import Header from "./Header";
 import Image from "next/image";
 import AnimatedText from "../../AnimatedText";
 
-// const line1 = "CLEVELAND";
-// const line2 = "MEETUP";
-
-// const sentence = {
-//   hidden: { opacity: 0.5 },
-//   visible: {
-//     opacity: 1,
-//     transition: {
-//       delay: 0.5,
-//       straggerChildren: 0.08,
-//     },
-//   },
-// };
-
-// const letter = {
-//   hidden: { opacity: 0, y: 50 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//   },
-// };
-
 const placeholderText = [
   { type: "heading1", text: "CLEVELAND" },
   {

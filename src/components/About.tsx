@@ -12,6 +12,9 @@ const placeholderText = [
   },
 ];
 
+const mission = [{ type: "heading1", text: "MISSION" }];
+const vision = [{ type: "heading1", text: "VISION" }];
+
 const container = {
   visible: {
     transition: {
@@ -40,6 +43,56 @@ function AboutHeader() {
         className={`container ${tt} pt-6 pb-10 text-center text-[40px] leading-10 text-white lg:pt-0 lg:pb-0 lg:text-7xl`}
       >
         {placeholderText.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
+
+function Mission() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className={`container ${tt} text-5xl text-white lg:text-7xl`}>
+        {mission.map((item, index) => {
+          return <AnimatedText {...item} key={index} />;
+        })}
+      </div>
+    </motion.div>
+  );
+}
+
+function Vision() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+  return (
+    <motion.div
+      className="App"
+      initial="hidden"
+      variants={container}
+      ref={ref}
+      animate={controls}
+    >
+      <div className={`container ${tt} text-5xl text-white lg:text-7xl`}>
+        {vision.map((item, index) => {
           return <AnimatedText {...item} key={index} />;
         })}
       </div>
@@ -104,11 +157,11 @@ const About = () => {
           </button>
         ))}
       </div>
-      <main className="mt-7 my-5 flex flex-col gap-y-10 lg:mt-0 lg:my-0 lg:mb-10">
+      <main className="my-5 mt-7 flex flex-col gap-y-10 lg:my-0 lg:mt-0 lg:mb-10">
         <div className="flex flex-col items-center">
-          <div className={`${tt} text-5xl text-white lg:text-7xl`}>MISSION</div>
+          <Mission />
           <div
-            className={`${tt} max-w-xs lg:max-w-xl text-center text-xl uppercase text-gray-400 lg:text-2xl`}
+            className={`${tt} max-w-xs text-center text-xl uppercase text-gray-400 lg:max-w-xl lg:text-2xl`}
           >
             The Cleveland DAO is a community of blockchain enthusiasts seeking
             opportunities to learn, educate, collaborate, and build with others
@@ -116,7 +169,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <div className={`${tt} text-5xl text-white lg:text-7xl`}>VISION</div>
+          <Vision />
           <div
             className={`${tt} max-w-xs text-center text-xl uppercase text-gray-400 lg:max-w-md lg:text-2xl`}
           >
