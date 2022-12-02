@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 
 // Word wrapper
 const Wrapper = (props) => {
@@ -78,7 +78,12 @@ const AnimatedCharacters = (props) => {
           </Wrapper>
         );
       })}
-      {/* {} */}
+      <motion.span
+        style={{
+          display: "-webkit-flex",
+        }}
+        variants={item}
+      ></motion.span>
     </Tag>
   );
 };

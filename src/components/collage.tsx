@@ -56,7 +56,7 @@ const Collage = () => {
         {collage.map((item, index) => (
           <div key={index}>
             <img
-              className="inline-block h-72 w-80 rounded-lg"
+              className="inline-block h-72 w-80 rounded-lg object-cover"
               src={item.image}
               alt="collage"
             />

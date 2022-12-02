@@ -43,15 +43,15 @@ const Founders = () => {
   const founders = [
     {
       image: "/assets/images/founders/founder-one.png",
-      title: "Founder 1",
+      title: "Greg Genega",
     },
     {
       image: "/assets/images/founders/founder-two.png",
-      title: "Founder 2",
+      title: "Justice Conder",
     },
     {
       image: "/assets/images/founders/founder-three.png",
-      title: "Founder 3",
+      title: "David Hunt-Mateo",
     },
   ];
 
@@ -72,7 +72,7 @@ const Founders = () => {
               alt={""}
             />
             <div
-              className={`${tt} mt-5 max-w-sm text-center text-3xl uppercase text-white lg:mt-10 lg:text-4xl`}
+              className={`${tt} mt-5 max-w-sm text-center text-lg uppercase text-white lg:mt-10 lg:text-xl`}
             >
               {item.title}
             </div>
